@@ -5,7 +5,9 @@ import * as ApiController from '../controllers/apiController.js';
 
 const router = Router();
 
-router.get('/ping', ApiController.ping);
+app.get('/', (req, res) => {
+  res.send('Onclick Database is Running');
+});
 
 router.post('/dailyreport', ApiController.dailyreport);
 
