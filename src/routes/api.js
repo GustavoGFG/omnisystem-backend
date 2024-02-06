@@ -5,7 +5,7 @@ import * as ApiController from '../controllers/apiController.js';
 
 const router = Router();
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.send('Onclick Database is Running');
 });
 
